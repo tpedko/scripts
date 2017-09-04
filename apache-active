@@ -1,0 +1,1 @@
+sort /var/log/httpd/access_log | awk '{print $1}' | uniq -c | sort -n > /tmp/who
